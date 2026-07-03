@@ -1,0 +1,67 @@
+name: LinkedIn Auto-Post
+
+on:
+  schedule:
+    # 3 posts per day — times in UTC (Pakistan = UTC+5)
+    # 07:00 UTC = 12:00 PKT (noon)
+    - cron: "0 7 * * *"
+    # 12:00 UTC = 17:00 PKT (evening)
+    - cron: "0 12 * * *"
+    # 18:00 UTC = 23:00 PKT (night)
+    - cron: "0 18 * * *"
+
+  # Allow manual trigger from GitHub Actions UI or dashboard
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (generate post but do not publish)"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+      topic_hint:
+        description: "Optional topic hint (e.g. 'React', 'Node.js', 'debugging')"
+        required: false
+        default: ""
+        type: string
+
+jobs:
+  post-to-linkedin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate and publish LinkedIn post
+        env:
+          GEMINI_API_KEY:          ${{ secrets.GEMINI_API_KEY }}
+          LINKEDIN_CLIENT_ID:      ${{ secrets.LINKEDIN_CLIENT_ID }}
+          LINKEDIN_CLIENT_SECRET:  ${{ secrets.LINKEDIN_CLIENT_SECRET }}
+          LINKEDIN_ACCESS_TOKEN:   ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_REFRESH_TOKEN:  ${{ secrets.LINKEDIN_REFRESH_TOKEN }}
+          LINKEDIN_USER_URN:       ${{ secrets.LINKEDIN_USER_URN }}
+          GH_PAT:                  ${{ secrets.GH_PAT }}
+          DRY_RUN:                 ${{ github.event.inputs.dry_run || 'false' }}
+          TOPIC_HINT:              ${{ github.event.inputs.topic_hint || '' }}
+        run: python scripts/generate_post.py
+
+      - name: Commit updated post history
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update post history [skip ci]"
+          file_pattern: "data/post_history.json"
+          commit_user_name: "LinkedIn Auto-Post Bot"
+          commit_user_email: "bot@linkedin-autopost.local"
