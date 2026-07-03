@@ -15,11 +15,28 @@
       "text_preview": "Property management companies often lose revenue because of a slow, manual booking and onboarding process. When a prospective tenant has to wait days for background checks, lease\n\n#webdevelopment #sof...",
       "image_url": "",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7478795792003280896/"
+    },
+    {
+      "id": "urn:li:share:7478796210422571008",
+      "timestamp": "2026-07-03T13:06:06.129601+00:00",
+      "post_type": "expertise_showcase",
+      "topic": "WordPress theme customization: going beyond page builders to write actual code",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "businessgrowth",
+        "b2b",
+        "flutter"
+      ],
+      "text_preview": "Many businesses choose WordPress for its ease of use, but then fall into the trap of stacking heavy page builders and endless plugins. The result is a sluggish, un\n\n#webdevelopment #softwareengineerin...",
+      "image_url": "",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7478796210422571008/"
     }
   ],
-  "last_updated": "2026-07-03T13:04:26.315792+00:00",
-  "total_posts": 1,
+  "last_updated": "2026-07-03T13:06:06.129612+00:00",
+  "total_posts": 2,
   "topics_used": [
-    "Automating property bookings and tenant management with Node.js and Express"
+    "Automating property bookings and tenant management with Node.js and Express",
+    "WordPress theme customization: going beyond page builders to write actual code"
   ]
 }
