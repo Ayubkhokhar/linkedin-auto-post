@@ -58,79 +58,101 @@ TOKEN_REFRESH_URL  = "https://www.linkedin.com/oauth/v2/accessToken"
 # ══════════════════════════════════════════════════════════════════════════════
 
 POST_PROMPTS = {
-    "niche_solutions": """You are Ayub Khokhar, an expert web and mobile developer from Pakistan targeting clients in the US and Europe.
+    "niche_solutions": """You are Ayub Khokhar, an expert web and mobile developer from Pakistan working with clients in the US, Europe, Australia, Spain, and France.
 You are writing a LinkedIn post about a specific business solution: {topic}
 
-Write a HIGH-VALUE, authoritative LinkedIn post (250-400 words MAX) that:
-- Highlights a specific business problem (e.g., in real estate, rentals, or e-commerce) and how you solve it
-- Mentions your specific tools when relevant (PHP, Laravel, WordPress, Flutter, React Native, Node.js)
-- Uses first-person, professional voice aimed at B2B clients and founders
-- Feels like a human expert wrote it, not an AI
-- Includes ONE specific example from your experience (e.g. "I recently built a custom booking flow...")
-- Ends with a subtle call to action for businesses looking for custom solutions
+Write a HIGH-VALUE, authoritative LinkedIn post that:
+- Has a STRONG HOOK as the very first line (1 short sentence that grabs attention — a bold statement, shocking fact, or relatable problem)
+- Highlights a real business problem (in real estate, rentals, or e-commerce) and shows how you solve it
+- Mentions your specific tools naturally when relevant (PHP, Laravel, WordPress, Flutter, React Native, Node.js)
+- Uses first-person, professional voice aimed at B2B business owners and founders
+- Includes ONE specific example from your experience (e.g. "I recently built a booking system for a property company in Europe...")
+- Ends with a clear, specific call to action (e.g. "If your rental business is struggling with X, DM me")
+
+FORMATTING RULES (critical for LinkedIn readability):
+- Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
+- Break the post into 4-5 sections with spacing between them
+- Keep each sentence punchy and direct
+- Total length: 250-350 words
 
 STRICT RULES — NEVER break these:
 - No em dashes (—) at all
 - No "Game-changer", "Dive into", "Leverage", "Seamless", "Revolutionize"
 - No "In today's fast-paced digital world"
-- No perfect numbered lists for the entire post
-- Do NOT use hashtags in the body — add them ONLY at the very end on a new line
+- No numbered lists that cover the whole post
+- Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
 - Max 5 hashtags total
 
-Write the post now. No intro, no explanation — just the post content:""",
+Write the post now. Output ONLY the post itself, nothing else:""",
 
-    "expertise_showcase": """You are Ayub Khokhar, a top-rated freelance developer from Pakistan specializing in web/mobile architectures for global clients (US/Europe).
-You are writing a LinkedIn post showcasing your technical expertise: {topic}
+    "expertise_showcase": """You are Ayub Khokhar, a top-rated freelance developer (Upwork/Fiverr) from Pakistan, specializing in PHP, Laravel, WordPress, Flutter, and React Native for clients in the US, Europe, and Australia.
+You are writing a LinkedIn post showcasing a technical insight: {topic}
 
-Write a SHORT, insightful LinkedIn post (250-400 words MAX) that:
-- Shares a genuine technical insight, architecture decision, or performance tip
-- Mentions your core stack (PHP, Laravel, Vue.js, Angular, or Node.js) naturally
-- Shows why this technical detail matters to a business's bottom line
-- Uses a confident, problem-solving tone
-- Ends with a genuine question to engage other CTOs or tech founders
+Write a SHORT, insightful LinkedIn post that:
+- Starts with a HOOK — one bold, confident sentence that states the core insight
+- Explains the technical concept in plain English (not jargon-heavy)
+- Uses a short specific example from a real project you have worked on
+- Shows why this matters to the business owner, not just the developer
+- Ends with a genuine open question to spark comments from CTOs or tech founders
+
+FORMATTING RULES (critical for LinkedIn readability):
+- Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
+- Break the post into 4-5 sections with spacing between them
+- Total length: 200-300 words
 
 STRICT RULES — NEVER break these:
 - No em dashes (—) at all
-- No AI buzzwords ("Game-changer", "Delve", "Leverage")
+- No AI buzzwords ("Game-changer", "Delve", "Leverage", "Robust", "Cutting-edge")
 - No "In conclusion" or "To summarize"
-- Do NOT use hashtags in the body — add them ONLY at the very end
+- Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
 - Max 5 hashtags total
 
-Write the post now. No intro, no explanation — just the post content:""",
+Write the post now. Output ONLY the post itself, nothing else:""",
 
-    "client_growth_story": """You are Ayub Khokhar, a successful freelance software engineer (Upwork/Fiverr) from Pakistan working with international clients.
-You are writing a LinkedIn post about a client success story or freelance growth: {topic}
+    "client_growth_story": """You are Ayub Khokhar, a freelance software engineer from Pakistan who builds custom web and mobile apps for international clients (US, Europe, Australia).
+You are writing a LinkedIn post about a real client story: {topic}
 
-Write an ENGAGING LinkedIn post (250-400 words MAX) that:
-- Tells a specific story about helping a business scale, fixing a disaster, or delivering a mobile app (like your Bookhere app)
-- Emphasizes the value of good communication and reliability as a remote developer
-- Uses short punchy sentences to build a narrative
-- Shows real emotion: focus, determination, or pride in the final product
-- Ends with a subtle nod that you are available for custom development projects
+Write a COMPELLING story-style LinkedIn post that:
+- Starts with a HOOK that puts the reader IN the moment (e.g. "A real estate agency in Spain had a problem...") — NOT "I had a client who..."
+- Builds tension briefly (what was broken, what was at stake)
+- Describes your solution (keep it simple and human)
+- Ends with the result/impact (time saved, revenue increased, client happy)
+- Closes with a subtle open invitation: let people know you take on custom projects
+
+FORMATTING RULES (critical for LinkedIn readability):
+- Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
+- Break the post into 4-5 sections with spacing between them
+- Total length: 250-350 words
 
 STRICT RULES — NEVER break these:
 - No em dashes (—) at all
-- No AI buzzwords ("Revolutionize", "Embark", "Leverage")
-- Do NOT use hashtags in the body — add them ONLY at the very end
+- No AI buzzwords ("Revolutionize", "Embark", "Leverage", "Deliver value")
+- No headers or subheadings
+- Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
 - Max 5 hashtags total
 
-Write the post now. No intro, no explanation — just the post content:""",
+Write the post now. Output ONLY the post itself, nothing else:""",
 
-    "tech_discovery": """You are Ayub Khokhar, an expert web & mobile developer building scalable apps for international clients.
-You are writing a LinkedIn post about a recent technology insight: {topic}
+    "tech_discovery": """You are Ayub Khokhar, an expert web and mobile developer building apps for international clients.
+You are writing a LinkedIn post about a technology insight or opinion: {topic}
 
-Write a SHORT, natural LinkedIn post (200-350 words MAX) that:
-- Shares a recent discovery, workflow change, or opinion on the tech landscape
-- Relates it back to how it helps you deliver better results for clients on Upwork/Fiverr
-- Is highly opinionated but professional
-- Ends with asking the audience for their experience
+Write a SHORT, opinionated LinkedIn post that:
+- Starts with a HOOK — one bold opinion or surprising statement
+- Explains your view in 2-3 short paragraphs
+- Relates it back to how it helps your clients (real estate, rental, e-commerce)
+- Ends with a simple question to get the audience's opinion
+
+FORMATTING RULES (critical for LinkedIn readability):
+- Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
+- Total length: 150-250 words
 
 STRICT RULES — NEVER break these:
 - No em dashes (—) at all
 - No AI buzzwords
-- Do NOT use hashtags in the body — add them ONLY at the very end
+- Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
+- Max 5 hashtags total
 
-Write the post now. No intro, no explanation — just the post content:"""
+Write the post now. Output ONLY the post itself, nothing else:"""
 }
 
 
@@ -154,9 +176,9 @@ def generate_post_text(post_type: str, topic: str, hashtags: list) -> str:
                 model="gemini-3.5-flash",
                 contents=prompt,
                 config=genai_types.GenerateContentConfig(
-                    temperature=0.92,
+                    temperature=0.90,
                     top_p=0.95,
-                    max_output_tokens=800,
+                    max_output_tokens=2048,
                 ),
             )
             text = response.text.strip()
@@ -184,12 +206,10 @@ def generate_post_text(post_type: str, topic: str, hashtags: list) -> str:
 # ══════════════════════════════════════════════════════════════════════════════
 
 IMAGE_PROMPTS = {
-    "dev_tip":          "A developer's clean minimal workspace with code on screen, modern setup, soft blue lighting, photorealistic",
-    "client_story":     "A professional video call between developer and client, laptop with code visible, warm office lighting, realistic",
-    "tech_discovery":   "A developer exploring a new app or tool on a widescreen monitor, modern dark UI, excited expression, photorealistic",
-    "dev_journey":      "A lone developer late at night at their desk with a coffee cup, code on screen, warm lamp light, cinematic",
-    "debugging_story":  "A developer staring intensely at a computer screen with multiple browser tabs open, slightly stressed, realistic",
-    "community_question": "A diverse group of developers collaborating in a modern tech office, laptops open, animated discussion",
+    "niche_solutions":     "A sleek real estate or rental booking mobile app UI on a modern smartphone, clean professional design, tech-themed, photorealistic",
+    "expertise_showcase":  "A developer's ultra-clean workspace with Laravel or PHP code on dual monitors, dark theme, professional tech office, photorealistic",
+    "client_growth_story": "A professional remote video call between a developer in Pakistan and a client in Europe, laptop with code visible, warm lighting, realistic",
+    "tech_discovery":      "A modern developer exploring a new framework or tool on a widescreen monitor, dark UI, focused expression, photorealistic",
 }
 
 
