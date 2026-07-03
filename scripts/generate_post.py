@@ -293,18 +293,11 @@ def get_unsplash_image(post_type: str) -> tuple[str, bytes]:
     
     photo_id = random.choice(photo_pools.get(post_type, photo_pools["dev_tip"]))
     
-    # Fallback to Lorem Picsum if Unsplash fails or IDs are dead
-    url = f"https://picsum.photos/seed/{kw.replace(',', '')}{random.randint(1,100)}/1200/627"
-    
-    try:
-        resp = requests.get(url, timeout=15)
-        if resp.ok and len(resp.content) > 1000:
-            print(f"[unsplash] Image fetched ({len(resp.content)//1024}KB)")
-            return url, resp.content
-    except Exception as e:
-        print(f"[unsplash] Failed: {e}")
-    
-    return url, b""
+    # We removed the Picsum fallback because random placeholders look unprofessional on LinkedIn.
+    # Unsplash Source API is deprecated, so we return empty bytes. 
+    # This safely allows the script to publish a clean text-only post instead.
+    print(f"[fallback] No valid image source available. Proceeding with text-only post.")
+    return "", b""
 
 
 # ══════════════════════════════════════════════════════════════════════════════
