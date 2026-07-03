@@ -49,7 +49,7 @@ TOPIC_HINT             = os.getenv("TOPIC_HINT", "")
 # ─────────────────────────────────────────────────────────────────────────────
 
 LINKEDIN_API_BASE  = "https://api.linkedin.com"
-LINKEDIN_VERSION   = "202501"
+LINKEDIN_VERSION   = "202606"
 TOKEN_REFRESH_URL  = "https://www.linkedin.com/oauth/v2/accessToken"
 
 
