@@ -293,11 +293,8 @@ def get_unsplash_image(post_type: str) -> tuple[str, bytes]:
     
     photo_id = random.choice(photo_pools.get(post_type, photo_pools["dev_tip"]))
     
-    # Direct Unsplash photo URL (reliable, no API key)
-    if "/" not in photo_id:  # it's a photo ID
-        url = f"https://images.unsplash.com/photo-{photo_id}?w=1200&h=627&fit=crop&auto=format&q=80"
-    else:
-        url = f"https://source.unsplash.com/1200x627/?{kw}"
+    # Fallback to Lorem Picsum if Unsplash fails or IDs are dead
+    url = f"https://picsum.photos/seed/{kw.replace(',', '')}{random.randint(1,100)}/1200/627"
     
     try:
         resp = requests.get(url, timeout=15)
