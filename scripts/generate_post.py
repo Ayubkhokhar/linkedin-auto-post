@@ -188,25 +188,25 @@ def build_prompt(post_type: str, topic: str, hashtags: list) -> str:
 
 def generate_post_text(post_type: str, topic: str, hashtags: list) -> str:
     """Generate post text using Gemini API."""
-    genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel(
-        model_name="gemini-2.0-flash",
-        generation_config={
-            "temperature": 0.92,
-            "top_p": 0.95,
-            "max_output_tokens": 800,
-        }
-    )
+    client = genai.Client(api_key=GEMINI_API_KEY)
 
     prompt = build_prompt(post_type, topic, hashtags)
     
     for attempt in range(3):
         try:
-            response = model.generate_content(prompt)
+            response = client.models.generate_content(
+                model="gemini-3.5-flash",
+                contents=prompt,
+                config=genai_types.GenerateContentConfig(
+                    temperature=0.92,
+                    top_p=0.95,
+                    max_output_tokens=800,
+                ),
+            )
             text = response.text.strip()
             
             # Sanitize: remove any em dashes that slipped through
-            text = text.replace("—", "-").replace("–", "-")
+            text = text.replace("\u2014", "-").replace("\u2013", "-")
             
             # Ensure hashtags are at the end
             if not any(f"#{h}" in text for h in hashtags):
@@ -238,27 +238,25 @@ IMAGE_PROMPTS = {
 
 
 def generate_image_gemini(post_type: str, post_text: str) -> bytes | None:
-    """Try to generate image using Gemini/Imagen API."""
+    """Try to generate image using gemini-3.1-flash-image."""
     try:
-        genai.configure(api_key=GEMINI_API_KEY)
-        
-        # Use imagen-3.0-fast-generate-001 (available on free tier)
-        model = genai.ImageGenerationModel("imagen-3.0-generate-001")
+        client = genai.Client(api_key=GEMINI_API_KEY)
         
         base_prompt = IMAGE_PROMPTS.get(post_type, IMAGE_PROMPTS["dev_tip"])
         full_prompt = f"{base_prompt}. Professional LinkedIn post image, 16:9 aspect ratio, no text overlay."
         
-        response = model.generate_images(
-            prompt=full_prompt,
-            number_of_images=1,
-            aspect_ratio="16:9",
-            safety_filter_level="block_some",
+        response = client.models.generate_content(
+            model="gemini-3.1-flash-image",
+            contents=full_prompt,
+            config=genai_types.GenerateContentConfig(
+                response_modalities=["IMAGE"],
+            ),
         )
         
-        if response.images:
-            img = response.images[0]
-            print("[imagen] Image generated successfully")
-            return img._image_bytes
+        for part in response.candidates[0].content.parts:
+            if part.inline_data is not None:
+                print("[imagen] Image generated successfully via gemini-3.1-flash-image")
+                return part.inline_data.data
             
     except Exception as e:
         print(f"[imagen] Failed (will use Unsplash fallback): {e}")
