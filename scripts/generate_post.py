@@ -242,37 +242,38 @@ def generate_image_gemini(post_type: str, post_text: str) -> bytes | None:
 
 def get_unsplash_image(post_type: str) -> tuple[str, bytes]:
     """
-    Fallback: get a relevant image from Unsplash (no API key needed for source).
+    Fallback: get a relevant curated image directly from Unsplash CDN.
     Returns (url, image_bytes)
     """
-    # Unsplash Source API — free, no key required
-    keywords = {
-        "dev_tip":           "programming,code,developer",
-        "client_story":      "business,meeting,laptop",
-        "tech_discovery":    "technology,innovation,computer",
-        "dev_journey":       "developer,night,coding",
-        "debugging_story":   "code,screen,developer",
-        "community_question": "team,collaboration,office",
-    }
-    kw = keywords.get(post_type, "developer,code")
-    
-    # Use a curated set of high-quality tech images from Unsplash
-    # These are stable IDs of beautiful tech photos
-    photo_pools = {
-        "dev_tip":           ["oalS4H1IIDA", "Bj6ENZDMSDY", "m_HRfLhgABo", "vXInUOv1n84"],
-        "client_story":      ["5fNmWej4tAA", "GI1hwOGqGtE", "1K9T5YiZ2jU", "7okkFhxrxNw"],
-        "tech_discovery":    ["IgWNxx7paz4", "BfrQnKBulYQ", "ZVprbBmT8QA", "mkbX8PXMxaU"],
-        "dev_journey":       ["5Ntkpxqt54Y", "ygtbDbgjRYQ", "2EJCSULRwC8", "KE0nC8-58MQ"],
-        "debugging_story":   ["hGV2TfOh0ns", "qjX0QBtDXto", "FO7JIlwjOtU", "b18TRXc8UPQ"],
-        "community_question":["people,team,meeting", "collaboration,office", "startup,team", "developers,office"],
+    photo_urls = {
+        "niche_solutions": [
+            "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop", # mobile app wireframes
+            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop", # data/dashboard
+        ],
+        "expertise_showcase": [
+            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop", # developer laptop
+            "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop", # code on screen
+        ],
+        "client_growth_story": [
+            "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop", # people working
+            "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop", # business meeting
+        ],
+        "tech_discovery": [
+            "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop", # modern tech setup
+            "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop", # glowing code
+        ]
     }
     
-    photo_id = random.choice(photo_pools.get(post_type, photo_pools["dev_tip"]))
+    url = random.choice(photo_urls.get(post_type, photo_urls["niche_solutions"]))
+    print(f"[fallback] Downloading image from: {url}")
     
-    # We removed the Picsum fallback because random placeholders look unprofessional on LinkedIn.
-    # Unsplash Source API is deprecated, so we return empty bytes. 
-    # This safely allows the script to publish a clean text-only post instead.
-    print(f"[fallback] No valid image source available. Proceeding with text-only post.")
+    try:
+        resp = requests.get(url, timeout=10)
+        if resp.ok:
+            return url, resp.content
+    except Exception as e:
+        print(f"[fallback] Error downloading image: {e}")
+        
     return "", b""
 
 
