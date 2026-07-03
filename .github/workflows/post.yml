@@ -30,6 +30,8 @@ on:
 jobs:
   post-to-linkedin:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     timeout-minutes: 10
 
     steps:
