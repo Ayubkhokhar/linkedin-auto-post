@@ -189,7 +189,7 @@ def generate_post_text(post_type: str, topic: str, hashtags: list) -> str:
     """Generate post text using Gemini API."""
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash",
+        model_name="gemini-2.0-flash",
         generation_config={
             "temperature": 0.92,
             "top_p": 0.95,
@@ -242,7 +242,7 @@ def generate_image_gemini(post_type: str, post_text: str) -> bytes | None:
         genai.configure(api_key=GEMINI_API_KEY)
         
         # Use imagen-3.0-fast-generate-001 (available on free tier)
-        model = genai.ImageGenerationModel("imagen-3.0-fast-generate-001")
+        model = genai.ImageGenerationModel("imagen-3.0-generate-001")
         
         base_prompt = IMAGE_PROMPTS.get(post_type, IMAGE_PROMPTS["dev_tip"])
         full_prompt = f"{base_prompt}. Professional LinkedIn post image, 16:9 aspect ratio, no text overlay."
