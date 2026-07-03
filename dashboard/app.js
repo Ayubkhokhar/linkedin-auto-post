@@ -10,7 +10,10 @@ const state = {
   repo:  '',
   pat:   '',
   history: null,
+  settings: null,
+  settingsSha: null,
   selectedPostType: '',
+  selectedImageSource: 'unsplash',
 };
 
 const POST_TYPE_COLORS = {
@@ -36,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (state.owner && state.repo && state.pat) {
     loadHistory();
+    loadSettings();
     checkWorkflowStatus();
   } else {
     setStatus('unconfigured', 'Not configured');
@@ -120,6 +124,7 @@ function saveGithubConfig() {
 
   showToast('Config saved! Loading data...', 'success');
   loadHistory();
+  loadSettings();
   checkWorkflowStatus();
 }
 
@@ -462,13 +467,105 @@ async function triggerLivePost() {
 
 // ── TYPE PILLS ──────────────────────────────────────────────────────
 function setupTypePills() {
-  document.querySelectorAll('.type-pill').forEach(pill => {
+  document.querySelectorAll('.type-pill:not(.img-pill)').forEach(pill => {
     pill.addEventListener('click', () => {
-      document.querySelectorAll('.type-pill').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.type-pill:not(.img-pill)').forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
       state.selectedPostType = pill.dataset.type || '';
     });
   });
+
+  document.querySelectorAll('.img-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.img-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      state.selectedImageSource = pill.dataset.source || 'unsplash';
+    });
+  });
+}
+
+// ── SETTINGS MANAGEMENT ─────────────────────────────────────────────
+async function loadSettings() {
+  if (!state.owner || !state.repo || !state.pat) return;
+  try {
+    const resp = await ghGet('/contents/config/settings.json');
+    state.settingsSha = resp.sha;
+    
+    // Decode b64 text properly handling utf-8
+    const decoded = decodeURIComponent(escape(atob(resp.content.replace(/\n/g, ''))));
+    state.settings = JSON.parse(decoded);
+    
+    // Populate form
+    const sched = state.settings.schedule || {};
+    document.getElementById('sched-monday').value = sched.monday !== undefined ? sched.monday : 1;
+    document.getElementById('sched-tuesday').value = sched.tuesday !== undefined ? sched.tuesday : 1;
+    document.getElementById('sched-wednesday').value = sched.wednesday !== undefined ? sched.wednesday : 1;
+    document.getElementById('sched-thursday').value = sched.thursday !== undefined ? sched.thursday : 1;
+    document.getElementById('sched-friday').value = sched.friday !== undefined ? sched.friday : 1;
+    document.getElementById('sched-saturday').value = sched.saturday !== undefined ? sched.saturday : 1;
+    document.getElementById('sched-sunday').value = sched.sunday !== undefined ? sched.sunday : 1;
+    
+    const imgSrc = (state.settings.image_settings?.source || 'unsplash').toLowerCase();
+    document.querySelectorAll('.img-pill').forEach(p => p.classList.remove('active'));
+    const activePill = document.querySelector(`.img-pill[data-source="${imgSrc}"]`);
+    if (activePill) activePill.classList.add('active');
+    state.selectedImageSource = imgSrc;
+    
+  } catch (err) {
+    console.error('Failed to load settings:', err);
+  }
+}
+
+async function saveBotSettings() {
+  const btn = document.getElementById('saveBotSettingsBtn');
+  if (!state.settings || !state.settingsSha) {
+    showToast('Settings not loaded yet. Try refreshing.', 'error');
+    return;
+  }
+  
+  btn.disabled = true;
+  btn.textContent = 'Saving...';
+  
+  try {
+    // Update local state object
+    state.settings.schedule.monday = parseInt(document.getElementById('sched-monday').value) || 0;
+    state.settings.schedule.tuesday = parseInt(document.getElementById('sched-tuesday').value) || 0;
+    state.settings.schedule.wednesday = parseInt(document.getElementById('sched-wednesday').value) || 0;
+    state.settings.schedule.thursday = parseInt(document.getElementById('sched-thursday').value) || 0;
+    state.settings.schedule.friday = parseInt(document.getElementById('sched-friday').value) || 0;
+    state.settings.schedule.saturday = parseInt(document.getElementById('sched-saturday').value) || 0;
+    state.settings.schedule.sunday = parseInt(document.getElementById('sched-sunday').value) || 0;
+    
+    if (!state.settings.image_settings) state.settings.image_settings = {};
+    state.settings.image_settings.source = state.selectedImageSource;
+    
+    // Prepare commit
+    const newContent = JSON.stringify(state.settings, null, 2);
+    const encoded = btoa(unescape(encodeURIComponent(newContent)));
+    
+    const resp = await fetch(`https://api.github.com/repos/${state.owner}/${state.repo}/contents/config/settings.json`, {
+      method: 'PUT',
+      headers: { ...ghHeaders(), 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: 'fix(config): update bot settings from dashboard',
+        content: encoded,
+        sha: state.settingsSha
+      })
+    });
+    
+    if (!resp.ok) throw new Error(await resp.text());
+    
+    const result = await resp.json();
+    state.settingsSha = result.content.sha;
+    
+    showToast('Configuration saved successfully!', 'success');
+  } catch (err) {
+    console.error(err);
+    showToast('Failed to save settings to GitHub.', 'error');
+  }
+  
+  btn.disabled = false;
+  btn.innerHTML = `<svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Save Configuration`;
 }
 
 // ── UTILITY ─────────────────────────────────────────────────────────

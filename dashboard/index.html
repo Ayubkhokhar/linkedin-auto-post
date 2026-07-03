@@ -65,6 +65,10 @@
         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/></svg>
         Setup Guide
       </a></li>
+      <li><a href="#settings" class="nav-link" data-section="settings" id="nav-settings">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/></svg>
+        Settings
+      </a></li>
     </ul>
 
     <div class="sidebar-footer">
@@ -591,6 +595,49 @@ git push -u origin main</code>
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION: SETTINGS ───────────────────────────────────────── -->
+    <section class="section" id="section-settings">
+      <div class="card card-center">
+        <div class="card-header">
+          <h2 class="card-title">Bot Configuration</h2>
+        </div>
+        <p class="card-desc">Control your posting schedule and image generation preferences here.</p>
+        
+        <div class="trigger-form">
+          <div class="form-group">
+            <label class="form-label">Weekly Schedule (Posts per Day)</label>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(120px, 1fr));gap:10px;margin-top:10px;">
+              <div><label style="font-size:12px;color:var(--text-muted)">Monday</label><input type="number" id="sched-monday" class="form-input" min="0" max="3" value="1" /></div>
+              <div><label style="font-size:12px;color:var(--text-muted)">Tuesday</label><input type="number" id="sched-tuesday" class="form-input" min="0" max="3" value="1" /></div>
+              <div><label style="font-size:12px;color:var(--text-muted)">Wednesday</label><input type="number" id="sched-wednesday" class="form-input" min="0" max="3" value="1" /></div>
+              <div><label style="font-size:12px;color:var(--text-muted)">Thursday</label><input type="number" id="sched-thursday" class="form-input" min="0" max="3" value="1" /></div>
+              <div><label style="font-size:12px;color:var(--text-muted)">Friday</label><input type="number" id="sched-friday" class="form-input" min="0" max="3" value="1" /></div>
+              <div><label style="font-size:12px;color:var(--text-muted)">Saturday</label><input type="number" id="sched-saturday" class="form-input" min="0" max="3" value="1" /></div>
+              <div><label style="font-size:12px;color:var(--text-muted)">Sunday</label><input type="number" id="sched-sunday" class="form-input" min="0" max="3" value="1" /></div>
+            </div>
+            <p style="font-size:12px;color:var(--text-muted);margin-top:8px;">Max 3 posts per day. The bot checks if it's allowed to post at 07:00, 12:00, and 18:00 UTC.</p>
+          </div>
+
+          <div class="form-group" style="margin-top:24px;">
+            <label class="form-label">Image Generation Source</label>
+            <div class="type-pills" style="margin-top:10px;">
+              <button class="type-pill img-pill active" data-source="unsplash">Unsplash Only</button>
+              <button class="type-pill img-pill" data-source="ai">AI Only (Imagen 3)</button>
+              <button class="type-pill img-pill" data-source="both">Mix Both (50/50)</button>
+            </div>
+            <p style="font-size:12px;color:var(--text-muted);margin-top:8px;">AI generates unique tech-themed images using Google's Imagen 3. Unsplash uses high-quality professional stock photos.</p>
+          </div>
+
+          <div class="btn-row" style="margin-top:32px;">
+            <button class="btn btn-primary" id="saveBotSettingsBtn" onclick="saveBotSettings()">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Save Configuration
+            </button>
+          </div>
         </div>
       </div>
     </section>

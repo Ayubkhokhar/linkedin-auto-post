@@ -214,25 +214,31 @@ IMAGE_PROMPTS = {
 
 
 def generate_image_gemini(post_type: str, post_text: str) -> bytes | None:
-    """Try to generate image using gemini-3.1-flash-image."""
+    """Try to generate image using Imagen 3."""
     try:
         client = genai.Client(api_key=GEMINI_API_KEY)
         
-        base_prompt = IMAGE_PROMPTS.get(post_type, IMAGE_PROMPTS["dev_tip"])
-        full_prompt = f"{base_prompt}. Professional LinkedIn post image, 16:9 aspect ratio, no text overlay."
+        base_prompt = IMAGE_PROMPTS.get(post_type, IMAGE_PROMPTS.get("niche_solutions", "Professional office"))
+        full_prompt = f"{base_prompt}. Professional LinkedIn post image, no text overlay."
         
-        response = client.models.generate_content(
-            model="gemini-3.1-flash-image",
-            contents=full_prompt,
-            config=genai_types.GenerateContentConfig(
-                response_modalities=["IMAGE"],
-            ),
+        # Read the model name from config, fallback to imagen-3.0-generate-001
+        with open(Path(__file__).parent.parent / "config" / "settings.json", "r", encoding="utf-8") as f:
+            settings = json.load(f)
+        ai_model = settings.get("image_settings", {}).get("ai_model", "imagen-3.0-generate-001")
+        
+        result = client.models.generate_images(
+            model=ai_model,
+            prompt=full_prompt,
+            config=genai.types.GenerateImagesConfig(
+                number_of_images=1,
+                output_mime_type="image/jpeg",
+                aspect_ratio="16:9"
+            )
         )
         
-        for part in response.candidates[0].content.parts:
-            if part.inline_data is not None:
-                print("[imagen] Image generated successfully via gemini-3.1-flash-image")
-                return part.inline_data.data
+        for generated_image in result.generated_images:
+            print(f"[imagen] Image generated successfully via {ai_model}")
+            return generated_image.image.image_bytes
             
     except Exception as e:
         print(f"[imagen] Failed (will use Unsplash fallback): {e}")
@@ -495,6 +501,29 @@ def main(dry_run: bool = False, hint: str = "") -> None:
     if not LINKEDIN_USER_URN and not dry_run:
         raise EnvironmentError("LINKEDIN_USER_URN is not set")
 
+    # Check daily schedule quota
+    with open(Path(__file__).parent.parent / "config" / "settings.json", "r", encoding="utf-8") as f:
+        settings = json.load(f)
+    
+    schedule = settings.get("schedule", {})
+    days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+    today_day = days[datetime.now(timezone.utc).weekday()]
+    allowed_posts = schedule.get(today_day, 1)
+
+    # Check history for today
+    posts_today = 0
+    history_file = Path(__file__).parent.parent / "data" / "post_history.json"
+    if history_file.exists():
+        with open(history_file, "r", encoding="utf-8") as f:
+            hist = json.load(f)
+            today_str = datetime.now(timezone.utc).date().isoformat()
+            posts_today = sum(1 for p in hist.get("posts", []) if p.get("timestamp", "").startswith(today_str))
+
+    print(f"[quota] Today is {today_day.capitalize()}. Allowed: {allowed_posts}. Posted: {posts_today}")
+    if posts_today >= allowed_posts and not dry_run:
+        print("[quota] Daily quota met. Skipping post execution.")
+        return
+
     # 1. Select topic
     post_type, topic = select_post_type_and_topic(hint or TOPIC_HINT)
     hashtags          = get_hashtags(post_type, topic)
@@ -509,12 +538,23 @@ def main(dry_run: bool = False, hint: str = "") -> None:
 
     # 3. Generate image
     print("[step 3] Generating image...")
-    image_bytes = generate_image_gemini(post_type, post_text)
-    image_url   = ""
+    image_settings = settings.get("image_settings", {})
+    source_pref = image_settings.get("source", "unsplash").lower()
     
-    if not image_bytes:
+    if source_pref == "both":
+        source_pref = random.choice(["ai", "unsplash"])
+        
+    image_bytes = None
+    image_url = ""
+    
+    if source_pref == "ai":
+        image_bytes = generate_image_gemini(post_type, post_text)
+        if not image_bytes:
+            print("[step 3] AI failed, falling back to Unsplash")
+            image_url, image_bytes = get_unsplash_image(post_type)
+    else:
         image_url, image_bytes = get_unsplash_image(post_type)
-        print(f"[step 3] Using Unsplash fallback: {image_url}")
+        print(f"[step 3] Using Unsplash image: {image_url}")
 
     if dry_run:
         print("\n[DRY RUN] Skipping LinkedIn posting. Post content above is what would be published.")

@@ -8,9 +8,15 @@
     "tone": "professional, confident, problem-solving, authoritative yet approachable, focused on business value"
   },
   "schedule": {
-    "posts_per_day": 1,
-    "times_utc": ["14:00"],
-    "timezone_label": "Targeting US/Europe (14:00 UTC = 9:00 AM EST = 3:00 PM CET)"
+    "monday": 1,
+    "tuesday": 1,
+    "wednesday": 1,
+    "thursday": 1,
+    "friday": 1,
+    "saturday": 1,
+    "sunday": 1,
+    "times_utc": ["07:00", "12:00", "18:00"],
+    "timezone_label": "Targeting US/Europe"
   },
   "post_type_weights": {
     "niche_solutions": 0.30,
@@ -90,8 +96,8 @@
     "max_hashtags": 5
   },
   "image_settings": {
-    "use_imagen": true,
-    "fallback_unsplash": true,
+    "source": "unsplash",
+    "ai_model": "imagen-3.0-generate-001",
     "image_style": "realistic, professional, tech-themed, modern workspace, software architecture, mobile app UI concepts",
     "dimensions": "1200x627"
   }

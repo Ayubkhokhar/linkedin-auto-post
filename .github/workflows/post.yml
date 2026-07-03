@@ -2,9 +2,7 @@ name: LinkedIn Auto-Post
 
 on:
   schedule:
-    # 1 post per day — 14:00 UTC targets US morning (9:00 AM EST) and Europe afternoon (3:00 PM CET)
-    # (Pakistan Time: 7:00 PM)
-    - cron: "0 14 * * *"
+    - cron: '0 7,12,18 * * *'
 
   # Allow manual trigger from GitHub Actions UI or dashboard
   workflow_dispatch:
