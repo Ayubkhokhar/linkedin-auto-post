@@ -31,12 +31,29 @@
       "text_preview": "Many businesses choose WordPress for its ease of use, but then fall into the trap of stacking heavy page builders and endless plugins. The result is a sluggish, un\n\n#webdevelopment #softwareengineerin...",
       "image_url": "",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7478796210422571008/"
+    },
+    {
+      "id": "urn:li:share:7478799174189297664",
+      "timestamp": "2026-07-03T13:17:52.875300+00:00",
+      "post_type": "tech_discovery",
+      "topic": "Why I insist on proper CI/CD pipelines even for small freelance projects",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "techcommunity",
+        "wordpress",
+        "fiverr"
+      ],
+      "text_preview": "Skipping CI/CD on small freelance projects is a recipe for disaster.\n\nMany developers think automated pipelines are only for big enterprise teams. They rely on manual FTP uploads or quick git pulls on...",
+      "image_url": "",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7478799174189297664/"
     }
   ],
-  "last_updated": "2026-07-03T13:06:06.129612+00:00",
-  "total_posts": 2,
+  "last_updated": "2026-07-03T13:17:52.875317+00:00",
+  "total_posts": 3,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
-    "WordPress theme customization: going beyond page builders to write actual code"
+    "WordPress theme customization: going beyond page builders to write actual code",
+    "Why I insist on proper CI/CD pipelines even for small freelance projects"
   ]
 }
