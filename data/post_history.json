@@ -1,6 +1,25 @@
 {
-  "posts": [],
-  "last_updated": null,
-  "total_posts": 0,
-  "topics_used": []
+  "posts": [
+    {
+      "id": "urn:li:share:7478795792003280896",
+      "timestamp": "2026-07-03T13:04:26.315774+00:00",
+      "post_type": "niche_solutions",
+      "topic": "Automating property bookings and tenant management with Node.js and Express",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "freelance",
+        "nodejs",
+        "laravel"
+      ],
+      "text_preview": "Property management companies often lose revenue because of a slow, manual booking and onboarding process. When a prospective tenant has to wait days for background checks, lease\n\n#webdevelopment #sof...",
+      "image_url": "",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7478795792003280896/"
+    }
+  ],
+  "last_updated": "2026-07-03T13:04:26.315792+00:00",
+  "total_posts": 1,
+  "topics_used": [
+    "Automating property bookings and tenant management with Node.js and Express"
+  ]
 }
