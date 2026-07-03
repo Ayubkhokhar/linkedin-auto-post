@@ -32,7 +32,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from topic_manager import select_post_type_and_topic, get_hashtags, log_post
 
-import google.generativeai as genai
+from google import genai
+from google.genai import types as genai_types
 
 # ─── ENV VARS (from GitHub Secrets) ─────────────────────────────────────────
 GEMINI_API_KEY         = os.getenv("GEMINI_API_KEY", "")
