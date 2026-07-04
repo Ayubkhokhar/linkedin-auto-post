@@ -47,13 +47,30 @@
       "text_preview": "Skipping CI/CD on small freelance projects is a recipe for disaster.\n\nMany developers think automated pipelines are only for big enterprise teams. They rely on manual FTP uploads or quick git pulls on...",
       "image_url": "",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7478799174189297664/"
+    },
+    {
+      "id": "urn:li:share:7479069595920826368",
+      "timestamp": "2026-07-04T07:12:26.682996+00:00",
+      "post_type": "client_growth_story",
+      "topic": "A client from Europe needed a custom booking system after their SaaS failed them",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "upwork",
+        "realestateapp",
+        "reactnative"
+      ],
+      "text_preview": "A boutique real estate agency in Spain was losing thousands of Euros every week.\nTheir expensive SaaS booking software kept crashing during peak viewing hours.\nClients could not book property tours, a...",
+      "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7479069595920826368/"
     }
   ],
-  "last_updated": "2026-07-03T13:17:52.875317+00:00",
-  "total_posts": 3,
+  "last_updated": "2026-07-04T07:12:26.683011+00:00",
+  "total_posts": 4,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
-    "Why I insist on proper CI/CD pipelines even for small freelance projects"
+    "Why I insist on proper CI/CD pipelines even for small freelance projects",
+    "A client from Europe needed a custom booking system after their SaaS failed them"
   ]
 }
