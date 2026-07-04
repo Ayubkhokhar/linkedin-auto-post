@@ -3,8 +3,25 @@
     "name": "Ayub Khokhar",
     "role": "Expert Web & Mobile Developer",
     "experience_years": 5,
-    "stack": ["PHP", "Laravel", "WordPress", "Vue.js", "Angular", "Node.js", "Express.js", "Flutter", "React Native"],
-    "specialties": ["Real Estate Apps", "Rental & Booking Platforms", "Custom Web Development", "Payment Gateways", "API Integrations", "Fiverr/Upwork Top Rated"],
+    "stack": [
+      "PHP",
+      "Laravel",
+      "WordPress",
+      "Vue.js",
+      "Angular",
+      "Node.js",
+      "Express.js",
+      "Flutter",
+      "React Native"
+    ],
+    "specialties": [
+      "Real Estate Apps",
+      "Rental & Booking Platforms",
+      "Custom Web Development",
+      "Payment Gateways",
+      "API Integrations",
+      "Fiverr/Upwork Top Rated"
+    ],
     "tone": "professional, confident, problem-solving, authoritative yet approachable, focused on business value"
   },
   "schedule": {
@@ -15,12 +32,16 @@
     "friday": 1,
     "saturday": 1,
     "sunday": 1,
-    "times_utc": ["07:00", "12:00", "18:00"],
+    "times_utc": [
+      "07:00",
+      "12:00",
+      "18:00"
+    ],
     "timezone_label": "Targeting US/Europe"
   },
   "post_type_weights": {
-    "niche_solutions": 0.30,
-    "expertise_showcase": 0.30,
+    "niche_solutions": 0.3,
+    "expertise_showcase": 0.3,
     "client_growth_story": 0.25,
     "tech_discovery": 0.15
   },
@@ -86,17 +107,35 @@
     "Keep it grounded and professional, aimed at B2B clients"
   ],
   "hashtag_pools": {
-    "always_include": ["webdevelopment", "softwareengineering"],
+    "always_include": [
+      "webdevelopment",
+      "softwareengineering"
+    ],
     "rotating": [
-      "php", "laravel", "wordpress", "flutter", "reactnative",
-      "nodejs", "vuejs", "angular", "realestateapp", "bookingsoftware",
-      "mobileappdevelopment", "freelance", "upwork", "fiverr", "api",
-      "paymentgateway", "techcommunity", "businessgrowth", "b2b"
+      "php",
+      "laravel",
+      "wordpress",
+      "flutter",
+      "reactnative",
+      "nodejs",
+      "vuejs",
+      "angular",
+      "realestateapp",
+      "bookingsoftware",
+      "mobileappdevelopment",
+      "freelance",
+      "upwork",
+      "fiverr",
+      "api",
+      "paymentgateway",
+      "techcommunity",
+      "businessgrowth",
+      "b2b"
     ],
     "max_hashtags": 5
   },
   "image_settings": {
-    "source": "unsplash",
+    "source": "both",
     "ai_model": "imagen-3.0-generate-001",
     "image_style": "realistic, professional, tech-themed, modern workspace, software architecture, mobile app UI concepts",
     "dimensions": "1200x627"
