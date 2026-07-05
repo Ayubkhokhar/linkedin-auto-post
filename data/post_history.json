@@ -63,14 +63,31 @@
       "text_preview": "A boutique real estate agency in Spain was losing thousands of Euros every week.\nTheir expensive SaaS booking software kept crashing during peak viewing hours.\nClients could not book property tours, a...",
       "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7479069595920826368/"
+    },
+    {
+      "id": "urn:li:share:7479467912114651136",
+      "timestamp": "2026-07-05T09:35:12.525146+00:00",
+      "post_type": "tech_discovery",
+      "topic": "The importance of clean architecture in long-term freelance projects",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "mobileappdevelopment",
+        "freelance",
+        "angular"
+      ],
+      "text_preview": "Most freelance developers build apps that are designed to fail after six months of scaling.\n\nWhen you are hired to build a custom application, speed is often the main priority. But skipping clean arch...",
+      "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7479467912114651136/"
     }
   ],
-  "last_updated": "2026-07-04T07:12:26.683011+00:00",
-  "total_posts": 4,
+  "last_updated": "2026-07-05T09:35:12.525160+00:00",
+  "total_posts": 5,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
     "Why I insist on proper CI/CD pipelines even for small freelance projects",
-    "A client from Europe needed a custom booking system after their SaaS failed them"
+    "A client from Europe needed a custom booking system after their SaaS failed them",
+    "The importance of clean architecture in long-term freelance projects"
   ]
 }
