@@ -95,16 +95,33 @@
       "text_preview": "A luxury real estate agency in Spain was losing thousands of Euros in commissions every single week.\n\nTheir property website took nearly eight seconds to load a single page.\n\nHigh-net-worth buyers loo...",
       "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7479857501585461248/"
+    },
+    {
+      "id": "urn:li:share:7480203934851219456",
+      "timestamp": "2026-07-07T10:19:53.825290+00:00",
+      "post_type": "expertise_showcase",
+      "topic": "Why I chose React Native for my rental business app 'Bookhere'",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "upwork",
+        "wordpress",
+        "fiverr"
+      ],
+      "text_preview": "Building two separate apps for iOS and Android is a massive waste of your budget when a single codebase can deliver the exact same native experience.\n\nReact Native allows developers to write code once...",
+      "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7480203934851219456/"
     }
   ],
-  "last_updated": "2026-07-06T11:23:17.678001+00:00",
-  "total_posts": 6,
+  "last_updated": "2026-07-07T10:19:53.825306+00:00",
+  "total_posts": 7,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
     "Why I insist on proper CI/CD pipelines even for small freelance projects",
     "A client from Europe needed a custom booking system after their SaaS failed them",
     "The importance of clean architecture in long-term freelance projects",
-    "A real estate agency was losing leads due to slow load times. We rebuilt it in Laravel."
+    "A real estate agency was losing leads due to slow load times. We rebuilt it in Laravel.",
+    "Why I chose React Native for my rental business app 'Bookhere'"
   ]
 }
