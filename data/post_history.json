@@ -111,10 +111,26 @@
       "text_preview": "Building two separate apps for iOS and Android is a massive waste of your budget when a single codebase can deliver the exact same native experience.\n\nReact Native allows developers to write code once...",
       "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7480203934851219456/"
+    },
+    {
+      "id": "urn:li:share:7480551697107292160",
+      "timestamp": "2026-07-08T09:21:46.868773+00:00",
+      "post_type": "niche_solutions",
+      "topic": "Why real estate agencies are moving away from generic templates to custom Flutter apps",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "reactnative",
+        "mobileappdevelopment",
+        "techcommunity"
+      ],
+      "text_preview": "Off-the-shelf real estate templates are quietly killing your property sales.\n\nMany agency owners start with basic WordPress setups to list their properties. But as the portfolio grows, these generic t...",
+      "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7480551697107292160/"
     }
   ],
-  "last_updated": "2026-07-07T10:19:53.825306+00:00",
-  "total_posts": 7,
+  "last_updated": "2026-07-08T09:21:46.868787+00:00",
+  "total_posts": 8,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -122,6 +138,7 @@
     "A client from Europe needed a custom booking system after their SaaS failed them",
     "The importance of clean architecture in long-term freelance projects",
     "A real estate agency was losing leads due to slow load times. We rebuilt it in Laravel.",
-    "Why I chose React Native for my rental business app 'Bookhere'"
+    "Why I chose React Native for my rental business app 'Bookhere'",
+    "Why real estate agencies are moving away from generic templates to custom Flutter apps"
   ]
 }
