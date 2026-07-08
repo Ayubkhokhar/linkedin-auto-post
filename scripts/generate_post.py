@@ -73,7 +73,7 @@ FORMATTING RULES (critical for LinkedIn readability):
 - Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
 - Break the post into 4-5 sections with spacing between them
 - Keep each sentence punchy and direct
-- Total length: 250-350 words
+- Ensure you write a fully complete, finished post. Do not cut off mid-sentence.
 
 STRICT RULES — NEVER break these:
 - No em dashes (—) at all
@@ -82,6 +82,7 @@ STRICT RULES — NEVER break these:
 - No numbered lists that cover the whole post
 - Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
 - Max 5 hashtags total
+- Make sure the final sentence is completely finished with proper punctuation before stopping.
 
 Write the post now. Output ONLY the post itself, nothing else:""",
 
@@ -98,7 +99,7 @@ Write a SHORT, insightful LinkedIn post that:
 FORMATTING RULES (critical for LinkedIn readability):
 - Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
 - Break the post into 4-5 sections with spacing between them
-- Total length: 200-300 words
+- Ensure you write a fully complete, finished post. Do not cut off mid-sentence.
 
 STRICT RULES — NEVER break these:
 - No em dashes (—) at all
@@ -106,6 +107,7 @@ STRICT RULES — NEVER break these:
 - No "In conclusion" or "To summarize"
 - Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
 - Max 5 hashtags total
+- Make sure the final sentence is completely finished with proper punctuation before stopping.
 
 Write the post now. Output ONLY the post itself, nothing else:""",
 
@@ -122,7 +124,7 @@ Write a COMPELLING story-style LinkedIn post that:
 FORMATTING RULES (critical for LinkedIn readability):
 - Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
 - Break the post into 4-5 sections with spacing between them
-- Total length: 250-350 words
+- Ensure you write a fully complete, finished post. Do not cut off mid-sentence.
 
 STRICT RULES — NEVER break these:
 - No em dashes (—) at all
@@ -130,6 +132,7 @@ STRICT RULES — NEVER break these:
 - No headers or subheadings
 - Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
 - Max 5 hashtags total
+- Make sure the final sentence is completely finished with proper punctuation before stopping.
 
 Write the post now. Output ONLY the post itself, nothing else:""",
 
@@ -144,13 +147,14 @@ Write a SHORT, opinionated LinkedIn post that:
 
 FORMATTING RULES (critical for LinkedIn readability):
 - Use SHORT paragraphs — maximum 2-3 lines each, then a blank line
-- Total length: 150-250 words
+- Ensure you write a fully complete, finished post. Do not cut off mid-sentence.
 
 STRICT RULES — NEVER break these:
 - No em dashes (—) at all
 - No AI buzzwords
 - Do NOT put hashtags in the body — place them ONLY at the very end, after a blank line
 - Max 5 hashtags total
+- Make sure the final sentence is completely finished with proper punctuation before stopping.
 
 Write the post now. Output ONLY the post itself, nothing else:"""
 }
