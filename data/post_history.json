@@ -159,10 +159,26 @@
       "text_preview": "Your $50-a-month rental software is quietly killing your business growth.\n\nWhen you start a rental or property business, ready-made SaaS tools look perfect. They are cheap, quick to set up, and get yo...",
       "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7481290003537465344/"
+    },
+    {
+      "id": "urn:li:share:7481612364853960704",
+      "timestamp": "2026-07-11T07:36:30.291570+00:00",
+      "post_type": "expertise_showcase",
+      "topic": "How to securely handle webhooks from payment gateways in Express.js",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "realestateapp",
+        "php",
+        "reactnative"
+      ],
+      "text_preview": "If you accept online payments, an unverified webhook is an open door for hackers to fake successful transactions.\n\nWebhooks tell your server when a payment succeeds. But anyone can send a fake POST re...",
+      "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7481612364853960704/"
     }
   ],
-  "last_updated": "2026-07-10T10:15:33.377156+00:00",
-  "total_posts": 10,
+  "last_updated": "2026-07-11T07:36:30.291586+00:00",
+  "total_posts": 11,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -173,6 +189,7 @@
     "Why I chose React Native for my rental business app 'Bookhere'",
     "Why real estate agencies are moving away from generic templates to custom Flutter apps",
     "The evolution of PHP 8 has completely changed how I write Laravel apps",
-    "Why off-the-shelf rental software fails when your business scales"
+    "Why off-the-shelf rental software fails when your business scales",
+    "How to securely handle webhooks from payment gateways in Express.js"
   ]
 }
