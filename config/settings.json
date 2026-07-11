@@ -135,7 +135,7 @@
     "max_hashtags": 5
   },
   "image_settings": {
-    "source": "both",
+    "source": "ai",
     "ai_model": "imagen-3.0-generate-001",
     "image_style": "realistic, professional, tech-themed, modern workspace, software architecture, mobile app UI concepts",
     "dimensions": "1200x627"
