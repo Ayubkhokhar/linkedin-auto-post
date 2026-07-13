@@ -191,10 +191,26 @@
       "text_preview": "Chasing every new framework is the fastest way to kill your freelance business.\n\nMost developers waste hundreds of hours learning tools they will never use. True expertise is not about knowing every n...",
       "image_url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7481995456072560640/"
+    },
+    {
+      "id": "urn:li:share:7482377504087875584",
+      "timestamp": "2026-07-13T10:16:53.699576+00:00",
+      "post_type": "expertise_showcase",
+      "topic": "Why PHP and Laravel are still the absolute kings of custom business applications",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "wordpress",
+        "techcommunity",
+        "freelance"
+      ],
+      "text_preview": "Despite what the tech hype cycle tells you, PHP and Laravel remain the most practical choice for building custom business software today.\n\nMany modern frameworks require you to piece together dozens o...",
+      "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7482377504087875584/"
     }
   ],
-  "last_updated": "2026-07-12T08:58:46.325247+00:00",
-  "total_posts": 12,
+  "last_updated": "2026-07-13T10:16:53.699592+00:00",
+  "total_posts": 13,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -207,6 +223,7 @@
     "The evolution of PHP 8 has completely changed how I write Laravel apps",
     "Why off-the-shelf rental software fails when your business scales",
     "How to securely handle webhooks from payment gateways in Express.js",
-    "Keeping up with tech trends while running a busy freelance business"
+    "Keeping up with tech trends while running a busy freelance business",
+    "Why PHP and Laravel are still the absolute kings of custom business applications"
   ]
 }
