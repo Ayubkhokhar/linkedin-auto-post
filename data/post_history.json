@@ -207,10 +207,26 @@
       "text_preview": "Despite what the tech hype cycle tells you, PHP and Laravel remain the most practical choice for building custom business software today.\n\nMany modern frameworks require you to piece together dozens o...",
       "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7482377504087875584/"
+    },
+    {
+      "id": "urn:li:share:7482720689418985472",
+      "timestamp": "2026-07-14T09:00:35.414476+00:00",
+      "post_type": "client_growth_story",
+      "topic": "How fixing a broken WordPress payment integration saved a US client's launch",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "paymentgateway",
+        "mobileappdevelopment",
+        "b2b"
+      ],
+      "text_preview": "It is 11:00 PM in California, and a US-based software company is exactly twelve hours away from their biggest product launch of the year.\n\nThe marketing campaigns are scheduled, the emails are queued,...",
+      "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7482720689418985472/"
     }
   ],
-  "last_updated": "2026-07-13T10:16:53.699592+00:00",
-  "total_posts": 13,
+  "last_updated": "2026-07-14T09:00:35.414491+00:00",
+  "total_posts": 14,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -224,6 +240,7 @@
     "Why off-the-shelf rental software fails when your business scales",
     "How to securely handle webhooks from payment gateways in Express.js",
     "Keeping up with tech trends while running a busy freelance business",
-    "Why PHP and Laravel are still the absolute kings of custom business applications"
+    "Why PHP and Laravel are still the absolute kings of custom business applications",
+    "How fixing a broken WordPress payment integration saved a US client's launch"
   ]
 }
