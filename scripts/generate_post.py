@@ -233,7 +233,7 @@ def generate_image_gemini(post_type: str, post_text: str) -> bytes | None:
         result = client.models.generate_images(
             model=ai_model,
             prompt=full_prompt,
-            config=genai.types.GenerateImagesConfig(
+            config=genai_types.GenerateImagesConfig(
                 number_of_images=1,
                 output_mime_type="image/jpeg",
                 aspect_ratio="16:9"
