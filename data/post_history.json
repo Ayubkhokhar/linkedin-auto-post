@@ -223,10 +223,26 @@
       "text_preview": "It is 11:00 PM in California, and a US-based software company is exactly twelve hours away from their biggest product launch of the year.\n\nThe marketing campaigns are scheduled, the emails are queued,...",
       "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7482720689418985472/"
+    },
+    {
+      "id": "urn:li:share:7483084228566458369",
+      "timestamp": "2026-07-15T09:05:09.339119+00:00",
+      "post_type": "tech_discovery",
+      "topic": "Why Headless WordPress with a Vue.js frontend is incredibly powerful",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "upwork",
+        "vuejs",
+        "angular"
+      ],
+      "text_preview": "Stop using WordPress to render your frontend. It is slowing down your business and hurting your search rankings.\n\nDecoupling your CMS by using WordPress strictly for data and Vue.js for the user inter...",
+      "image_url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7483084228566458369/"
     }
   ],
-  "last_updated": "2026-07-14T09:00:35.414491+00:00",
-  "total_posts": 14,
+  "last_updated": "2026-07-15T09:05:09.339138+00:00",
+  "total_posts": 15,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -241,6 +257,7 @@
     "How to securely handle webhooks from payment gateways in Express.js",
     "Keeping up with tech trends while running a busy freelance business",
     "Why PHP and Laravel are still the absolute kings of custom business applications",
-    "How fixing a broken WordPress payment integration saved a US client's launch"
+    "How fixing a broken WordPress payment integration saved a US client's launch",
+    "Why Headless WordPress with a Vue.js frontend is incredibly powerful"
   ]
 }
