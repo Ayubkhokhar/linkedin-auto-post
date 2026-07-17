@@ -255,10 +255,26 @@
       "text_preview": "An Australian retail startup had exactly four weeks to show a working mobile app to their lead investors.\n\nThey had already spent months negotiating, but their previous developer walked away with the ...",
       "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7483447641389875200/"
+    },
+    {
+      "id": "urn:li:share:7483808697794785281",
+      "timestamp": "2026-07-17T09:03:56.856294+00:00",
+      "post_type": "niche_solutions",
+      "topic": "Why speed and UI/UX matter more than ever in rental websites",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "api",
+        "nodejs",
+        "realestateapp"
+      ],
+      "text_preview": "A slow rental website is just an expensive way to lose customers to your competitors.\n\nWhen high-intent users look for properties to rent, they expect instant loading and intuitive navigation. If they...",
+      "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7483808697794785281/"
     }
   ],
-  "last_updated": "2026-07-16T09:09:13.751773+00:00",
-  "total_posts": 16,
+  "last_updated": "2026-07-17T09:03:56.856309+00:00",
+  "total_posts": 17,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -275,6 +291,7 @@
     "Why PHP and Laravel are still the absolute kings of custom business applications",
     "How fixing a broken WordPress payment integration saved a US client's launch",
     "Why Headless WordPress with a Vue.js frontend is incredibly powerful",
-    "My Upwork client wanted a mobile app in 4 weeks. Here's how Flutter made it possible"
+    "My Upwork client wanted a mobile app in 4 weeks. Here's how Flutter made it possible",
+    "Why speed and UI/UX matter more than ever in rental websites"
   ]
 }
