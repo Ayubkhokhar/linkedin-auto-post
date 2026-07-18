@@ -271,10 +271,26 @@
       "text_preview": "A slow rental website is just an expensive way to lose customers to your competitors.\n\nWhen high-intent users look for properties to rent, they expect instant loading and intuitive navigation. If they...",
       "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7483808697794785281/"
+    },
+    {
+      "id": "urn:li:share:7484165963454529536",
+      "timestamp": "2026-07-18T08:43:35.586469+00:00",
+      "post_type": "niche_solutions",
+      "topic": "Integrating complex payment gateways (Stripe/PayPal) seamlessly in accommodation platforms",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "bookingsoftware",
+        "b2b",
+        "techcommunity"
+      ],
+      "text_preview": "Your rental platform is losing up to 30% of its bookings at the checkout page.\n\nWhen building accommodation platforms, founders often focus too much on a beautiful user interface. But the real bottlen...",
+      "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7484165963454529536/"
     }
   ],
-  "last_updated": "2026-07-17T09:03:56.856309+00:00",
-  "total_posts": 17,
+  "last_updated": "2026-07-18T08:43:35.586485+00:00",
+  "total_posts": 18,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -292,6 +308,7 @@
     "How fixing a broken WordPress payment integration saved a US client's launch",
     "Why Headless WordPress with a Vue.js frontend is incredibly powerful",
     "My Upwork client wanted a mobile app in 4 weeks. Here's how Flutter made it possible",
-    "Why speed and UI/UX matter more than ever in rental websites"
+    "Why speed and UI/UX matter more than ever in rental websites",
+    "Integrating complex payment gateways (Stripe/PayPal) seamlessly in accommodation platforms"
   ]
 }
