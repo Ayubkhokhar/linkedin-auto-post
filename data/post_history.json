@@ -303,10 +303,26 @@
       "text_preview": "Your database is likely the silent bottleneck killing your application speed as you scale past 10,000 daily users.\n\nWhen Laravel applications slow down, teams often rush to buy more expensive servers....",
       "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7484533002170200064/"
+    },
+    {
+      "id": "urn:li:share:7484907540313731072",
+      "timestamp": "2026-07-20T09:50:20.816774+00:00",
+      "post_type": "expertise_showcase",
+      "topic": "The hidden costs of poorly integrated APIs in e-commerce",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "laravel",
+        "vuejs",
+        "fiverr"
+      ],
+      "text_preview": "Bad API integrations are a silent tax slowly draining your e-commerce profit margins.\n\nWhen your online store talks to payment gateways or shipping providers, they use APIs. If these connections do no...",
+      "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7484907540313731072/"
     }
   ],
-  "last_updated": "2026-07-19T09:02:04.224506+00:00",
-  "total_posts": 19,
+  "last_updated": "2026-07-20T09:50:20.816789+00:00",
+  "total_posts": 20,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -326,6 +342,7 @@
     "My Upwork client wanted a mobile app in 4 weeks. Here's how Flutter made it possible",
     "Why speed and UI/UX matter more than ever in rental websites",
     "Integrating complex payment gateways (Stripe/PayPal) seamlessly in accommodation platforms",
-    "Optimizing database queries in Laravel to handle 10k+ daily users"
+    "Optimizing database queries in Laravel to handle 10k+ daily users",
+    "The hidden costs of poorly integrated APIs in e-commerce"
   ]
 }
