@@ -319,10 +319,26 @@
       "text_preview": "Bad API integrations are a silent tax slowly draining your e-commerce profit margins.\n\nWhen your online store talks to payment gateways or shipping providers, they use APIs. If these connections do no...",
       "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7484907540313731072/"
+    },
+    {
+      "id": "urn:li:share:7485263114599337984",
+      "timestamp": "2026-07-21T09:23:16.571753+00:00",
+      "post_type": "tech_discovery",
+      "topic": "Why good logging in Node.js/Express saves you from 3 AM client panics",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "reactnative",
+        "paymentgateway",
+        "bookingsoftware"
+      ],
+      "text_preview": "Your clean code is completely useless if you cannot tell why a transaction failed at 3 AM.\n\nWhen a production app crashes, \"something went wrong\" is a nightmare. Without structured logging in Node.js,...",
+      "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7485263114599337984/"
     }
   ],
-  "last_updated": "2026-07-20T09:50:20.816789+00:00",
-  "total_posts": 20,
+  "last_updated": "2026-07-21T09:23:16.571767+00:00",
+  "total_posts": 21,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -343,6 +359,7 @@
     "Why speed and UI/UX matter more than ever in rental websites",
     "Integrating complex payment gateways (Stripe/PayPal) seamlessly in accommodation platforms",
     "Optimizing database queries in Laravel to handle 10k+ daily users",
-    "The hidden costs of poorly integrated APIs in e-commerce"
+    "The hidden costs of poorly integrated APIs in e-commerce",
+    "Why good logging in Node.js/Express saves you from 3 AM client panics"
   ]
 }
