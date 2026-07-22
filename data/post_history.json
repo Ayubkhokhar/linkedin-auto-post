@@ -335,10 +335,26 @@
       "text_preview": "Your clean code is completely useless if you cannot tell why a transaction failed at 3 AM.\n\nWhen a production app crashes, \"something went wrong\" is a nightmare. Without structured logging in Node.js,...",
       "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7485263114599337984/"
+    },
+    {
+      "id": "urn:li:share:7485625429538709505",
+      "timestamp": "2026-07-22T09:22:59.433332+00:00",
+      "post_type": "client_growth_story",
+      "topic": "The moment a client realized their custom mobile app paid for itself in one month",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "php",
+        "api",
+        "flutter"
+      ],
+      "text_preview": "A property management agency in Sydney was losing three hours every single day to paper checklists.\n\nTheir agents had to drive back to the office after every inspection just to type up reports manuall...",
+      "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7485625429538709505/"
     }
   ],
-  "last_updated": "2026-07-21T09:23:16.571767+00:00",
-  "total_posts": 21,
+  "last_updated": "2026-07-22T09:22:59.433347+00:00",
+  "total_posts": 22,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -360,6 +376,7 @@
     "Integrating complex payment gateways (Stripe/PayPal) seamlessly in accommodation platforms",
     "Optimizing database queries in Laravel to handle 10k+ daily users",
     "The hidden costs of poorly integrated APIs in e-commerce",
-    "Why good logging in Node.js/Express saves you from 3 AM client panics"
+    "Why good logging in Node.js/Express saves you from 3 AM client panics",
+    "The moment a client realized their custom mobile app paid for itself in one month"
   ]
 }
