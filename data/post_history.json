@@ -351,10 +351,26 @@
       "text_preview": "A property management agency in Sydney was losing three hours every single day to paper checklists.\n\nTheir agents had to drive back to the office after every inspection just to type up reports manuall...",
       "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7485625429538709505/"
+    },
+    {
+      "id": "urn:li:share:7485987042078658560",
+      "timestamp": "2026-07-23T09:19:54.243555+00:00",
+      "post_type": "tech_discovery",
+      "topic": "How Docker simplifies handing over projects to international clients",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "laravel",
+        "wordpress",
+        "techcommunity"
+      ],
+      "text_preview": "\"It works on my machine\" is the most expensive excuse in software development.\n\nWhen handing over a codebase to an international client, setting up the local environment should take five minutes, not ...",
+      "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7485987042078658560/"
     }
   ],
-  "last_updated": "2026-07-22T09:22:59.433347+00:00",
-  "total_posts": 22,
+  "last_updated": "2026-07-23T09:19:54.243575+00:00",
+  "total_posts": 23,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -377,6 +393,7 @@
     "Optimizing database queries in Laravel to handle 10k+ daily users",
     "The hidden costs of poorly integrated APIs in e-commerce",
     "Why good logging in Node.js/Express saves you from 3 AM client panics",
-    "The moment a client realized their custom mobile app paid for itself in one month"
+    "The moment a client realized their custom mobile app paid for itself in one month",
+    "How Docker simplifies handing over projects to international clients"
   ]
 }
