@@ -415,10 +415,26 @@
       "text_preview": "If you are accepting online payments, relying on basic API endpoints to process webhooks is an open invitation to financial fraud.\n\nWhen a customer pays, gateways like Stripe send a notification calle...",
       "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7487071212091899904/"
+    },
+    {
+      "id": "urn:li:share:7487454975548375040",
+      "timestamp": "2026-07-27T10:32:56.724352+00:00",
+      "post_type": "tech_discovery",
+      "topic": "Why I insist on proper CI/CD pipelines even for small freelance projects",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "bookingsoftware",
+        "b2b",
+        "techcommunity"
+      ],
+      "text_preview": "Skipping CI/CD on small freelance projects is not a smart way to save budget. It is a ticking time bomb.\n\nMany developers think automated pipelines are only for massive enterprise systems. They rely o...",
+      "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7487454975548375040/"
     }
   ],
-  "last_updated": "2026-07-26T09:08:00.883682+00:00",
-  "total_posts": 26,
+  "last_updated": "2026-07-27T10:32:56.724371+00:00",
+  "total_posts": 27,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
