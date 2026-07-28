@@ -431,10 +431,26 @@
       "text_preview": "Skipping CI/CD on small freelance projects is not a smart way to save budget. It is a ticking time bomb.\n\nMany developers think automated pipelines are only for massive enterprise systems. They rely o...",
       "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7487454975548375040/"
+    },
+    {
+      "id": "urn:li:share:7487801786842525696",
+      "timestamp": "2026-07-28T09:31:03.114131+00:00",
+      "post_type": "expertise_showcase",
+      "topic": "WordPress theme customization: going beyond page builders to write actual code",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "paymentgateway",
+        "reactnative",
+        "fiverr"
+      ],
+      "text_preview": "Page builders are great for quick mockups, but relying on them to run a high-traffic business website is a ticking time bomb for your loading speeds.\n\nWhen you build everything with drag-and-drop tool...",
+      "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7487801786842525696/"
     }
   ],
-  "last_updated": "2026-07-27T10:32:56.724371+00:00",
-  "total_posts": 27,
+  "last_updated": "2026-07-28T09:31:03.114149+00:00",
+  "total_posts": 28,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
