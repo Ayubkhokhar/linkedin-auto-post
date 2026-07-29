@@ -447,10 +447,26 @@
       "text_preview": "Page builders are great for quick mockups, but relying on them to run a high-traffic business website is a ticking time bomb for your loading speeds.\n\nWhen you build everything with drag-and-drop tool...",
       "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7487801786842525696/"
+    },
+    {
+      "id": "urn:li:share:7488164673570357249",
+      "timestamp": "2026-07-29T09:33:02.365601+00:00",
+      "post_type": "client_growth_story",
+      "topic": "My Upwork client wanted a mobile app in 4 weeks. Here's how Flutter made it possible",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "realestateapp",
+        "freelance",
+        "vuejs"
+      ],
+      "text_preview": "A property tech startup in Sydney had exactly 28 days to pitch to their biggest investors. They had a beautiful slide deck, but they lacked a working mobile app to show.\n\nWithout a live product, the f...",
+      "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488164673570357249/"
     }
   ],
-  "last_updated": "2026-07-28T09:31:03.114149+00:00",
-  "total_posts": 28,
+  "last_updated": "2026-07-29T09:33:02.365617+00:00",
+  "total_posts": 29,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
