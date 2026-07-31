@@ -479,10 +479,26 @@
       "text_preview": "Stop using Bloc for every single Flutter project. You are killing your app development speed and bloating your codebase.\n\nMost developers default to heavy state management tools because of industry hy...",
       "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488525171339808768/"
+    },
+    {
+      "id": "urn:li:share:7488890572330622976",
+      "timestamp": "2026-07-31T09:37:30.112939+00:00",
+      "post_type": "niche_solutions",
+      "topic": "Why real estate agencies are moving away from generic templates to custom Flutter apps",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "laravel",
+        "upwork",
+        "angular"
+      ],
+      "text_preview": "Generic real estate templates are quietly killing your property sales.\n\nMany agencies start with a basic WordPress website to list their properties. It works fine initially, but as the business grows,...",
+      "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488890572330622976/"
     }
   ],
-  "last_updated": "2026-07-30T09:25:31.619367+00:00",
-  "total_posts": 30,
+  "last_updated": "2026-07-31T09:37:30.112952+00:00",
+  "total_posts": 31,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
