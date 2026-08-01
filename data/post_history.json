@@ -495,10 +495,26 @@
       "text_preview": "Generic real estate templates are quietly killing your property sales.\n\nMany agencies start with a basic WordPress website to list their properties. It works fine initially, but as the business grows,...",
       "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7488890572330622976/"
+    },
+    {
+      "id": "urn:li:share:7489243658404282368",
+      "timestamp": "2026-08-01T09:00:32.503721+00:00",
+      "post_type": "niche_solutions",
+      "topic": "The architecture behind 'Bookhere': my React Native booking & rental platform",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "fiverr",
+        "php",
+        "paymentgateway"
+      ],
+      "text_preview": "Double-booking is not a software glitch, it is a business killer.\n\nWhen rental and booking platforms scale, API latency causes synchronization lag. If two users click \"book\" at the exact same millisec...",
+      "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7489243658404282368/"
     }
   ],
-  "last_updated": "2026-07-31T09:37:30.112952+00:00",
-  "total_posts": 31,
+  "last_updated": "2026-08-01T09:00:32.503739+00:00",
+  "total_posts": 32,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
