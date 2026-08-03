@@ -527,10 +527,26 @@
       "text_preview": "Your mobile website is quietly killing your booking conversions.\n\nWhen customers want to rent a property, a vehicle, or high-end equipment, they demand instant action.\n\nIf they have to wait for a slow...",
       "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7489607177058435072/"
+    },
+    {
+      "id": "urn:li:share:7489991808823771136",
+      "timestamp": "2026-08-03T10:33:25.117494+00:00",
+      "post_type": "expertise_showcase",
+      "topic": "Why I chose React Native for my rental business app 'Bookhere'",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "techcommunity",
+        "flutter",
+        "realestateapp"
+      ],
+      "text_preview": "You do not need two separate codebases to build a premium rental app that feels completely native on both iOS and Android.\n\nReact Native works by using one shared codebase that translates directly int...",
+      "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7489991808823771136/"
     }
   ],
-  "last_updated": "2026-08-02T09:05:02.057797+00:00",
-  "total_posts": 33,
+  "last_updated": "2026-08-03T10:33:25.117508+00:00",
+  "total_posts": 34,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
