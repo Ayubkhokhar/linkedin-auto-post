@@ -575,10 +575,26 @@
       "text_preview": "Your Laravel application is not slow because of PHP; it is slow because your database is doing ten times more work than it needs to.\n\nWhen your traffic hits 10k daily users, the biggest silent killer ...",
       "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7490700784490315777/"
+    },
+    {
+      "id": "urn:li:share:7491064299361144832",
+      "timestamp": "2026-08-06T09:35:06.609833+00:00",
+      "post_type": "tech_discovery",
+      "topic": "Why I insist on proper CI/CD pipelines even for small freelance projects",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "businessgrowth",
+        "mobileappdevelopment",
+        "b2b"
+      ],
+      "text_preview": "Skipping CI/CD on small freelance projects to \"save budget\" is actually the fastest way to blow through it.\n\nMany developers think automated pipelines are only for massive enterprise apps. They still ...",
+      "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7491064299361144832/"
     }
   ],
-  "last_updated": "2026-08-05T09:30:38.418514+00:00",
-  "total_posts": 36,
+  "last_updated": "2026-08-06T09:35:06.609845+00:00",
+  "total_posts": 37,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
