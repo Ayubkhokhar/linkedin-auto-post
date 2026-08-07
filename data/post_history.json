@@ -591,10 +591,26 @@
       "text_preview": "Skipping CI/CD on small freelance projects to \"save budget\" is actually the fastest way to blow through it.\n\nMany developers think automated pipelines are only for massive enterprise apps. They still ...",
       "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7491064299361144832/"
+    },
+    {
+      "id": "urn:li:share:7491404672134471682",
+      "timestamp": "2026-08-07T08:07:38.265039+00:00",
+      "post_type": "tech_discovery",
+      "topic": "The truth about cross-platform development (React Native/Flutter) in 2026",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "bookingsoftware",
+        "flutter",
+        "realestateapp"
+      ],
+      "text_preview": "In 2026, choosing native iOS or Android development for standard business apps is officially a waste of your capital.\n\nThe performance gap between native and cross-platform tools is dead. Flutter and ...",
+      "image_url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7491404672134471682/"
     }
   ],
-  "last_updated": "2026-08-06T09:35:06.609845+00:00",
-  "total_posts": 37,
+  "last_updated": "2026-08-07T08:07:38.265054+00:00",
+  "total_posts": 38,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -622,6 +638,7 @@
     "Syncing external property APIs (like MLS) directly into a custom WordPress or Laravel site",
     "The architecture behind 'Bookhere': my React Native booking & rental platform",
     "Discovering new state management patterns in Flutter",
-    "How a dedicated booking mobile app increases rental conversions by 40%"
+    "How a dedicated booking mobile app increases rental conversions by 40%",
+    "The truth about cross-platform development (React Native/Flutter) in 2026"
   ]
 }
