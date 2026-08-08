@@ -607,10 +607,26 @@
       "text_preview": "In 2026, choosing native iOS or Android development for standard business apps is officially a waste of your capital.\n\nThe performance gap between native and cross-platform tools is dead. Flutter and ...",
       "image_url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7491404672134471682/"
+    },
+    {
+      "id": "urn:li:share:7491760387298852864",
+      "timestamp": "2026-08-08T07:41:07.407162+00:00",
+      "post_type": "niche_solutions",
+      "topic": "Automating property bookings and tenant management with Node.js and Express",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "reactnative",
+        "laravel",
+        "vuejs"
+      ],
+      "text_preview": "Manual property management is quietly killing your rental business profit margins.\n\nMany property owners in the US and Europe still rely on spreadsheets and manual emails to track tenants, bookings, a...",
+      "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7491760387298852864/"
     }
   ],
-  "last_updated": "2026-08-07T08:07:38.265054+00:00",
-  "total_posts": 38,
+  "last_updated": "2026-08-08T07:41:07.407177+00:00",
+  "total_posts": 39,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
