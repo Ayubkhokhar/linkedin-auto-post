@@ -639,10 +639,26 @@
       "text_preview": "For enterprise dashboards, choosing Angular by default is a costly mistake when Vue.js can get you to market twice as fast.\n\nAngular forces your team into a strict, complex structure with a massive fo...",
       "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7492123819860697088/"
+    },
+    {
+      "id": "urn:li:share:7492495368920809472",
+      "timestamp": "2026-08-10T08:21:40.155467+00:00",
+      "post_type": "client_growth_story",
+      "topic": "A client from Europe needed a custom booking system after their SaaS failed them",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "businessgrowth",
+        "b2b",
+        "freelance"
+      ],
+      "text_preview": "A boutique real estate agency in Spain was losing thousands of Euros every week.\n\nTheir off-the-shelf booking software was constantly dropping double-bookings for luxury villa viewings. High-value cli...",
+      "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7492495368920809472/"
     }
   ],
-  "last_updated": "2026-08-09T07:45:16.390694+00:00",
-  "total_posts": 40,
+  "last_updated": "2026-08-10T08:21:40.155483+00:00",
+  "total_posts": 41,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
