@@ -655,10 +655,26 @@
       "text_preview": "A boutique real estate agency in Spain was losing thousands of Euros every week.\n\nTheir off-the-shelf booking software was constantly dropping double-bookings for luxury villa viewings. High-value cli...",
       "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7492495368920809472/"
+    },
+    {
+      "id": "urn:li:share:7492853351336914944",
+      "timestamp": "2026-08-11T08:04:09.886554+00:00",
+      "post_type": "client_growth_story",
+      "topic": "Client story: Automating manual invoice generation for a rental business",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "bookingsoftware",
+        "angular",
+        "nodejs"
+      ],
+      "text_preview": "Every Friday afternoon, Maria dreaded the exact same task.\n\nShe sat in her Barcelona office surrounded by spreadsheets, manually typing out billing details for over a hundred rental properties.\n\nOne w...",
+      "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7492853351336914944/"
     }
   ],
-  "last_updated": "2026-08-10T08:21:40.155483+00:00",
-  "total_posts": 41,
+  "last_updated": "2026-08-11T08:04:09.886571+00:00",
+  "total_posts": 42,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -688,6 +704,7 @@
     "Discovering new state management patterns in Flutter",
     "How a dedicated booking mobile app increases rental conversions by 40%",
     "The truth about cross-platform development (React Native/Flutter) in 2026",
-    "Vue.js vs Angular for enterprise dashboards: my honest take"
+    "Vue.js vs Angular for enterprise dashboards: my honest take",
+    "Client story: Automating manual invoice generation for a rental business"
   ]
 }
