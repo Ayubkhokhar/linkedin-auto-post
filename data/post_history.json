@@ -671,10 +671,26 @@
       "text_preview": "Every Friday afternoon, Maria dreaded the exact same task.\n\nShe sat in her Barcelona office surrounded by spreadsheets, manually typing out billing details for over a hundred rental properties.\n\nOne w...",
       "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7492853351336914944/"
+    },
+    {
+      "id": "urn:li:share:7493217091643162624",
+      "timestamp": "2026-08-12T08:09:32.404809+00:00",
+      "post_type": "niche_solutions",
+      "topic": "Syncing external property APIs (like MLS) directly into a custom WordPress or Laravel site",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "vuejs",
+        "php",
+        "laravel"
+      ],
+      "text_preview": "Most real estate websites lose leads because their property data is hours behind the market.\n\nRelying on slow, outdated plugins to sync MLS and external property APIs is a massive risk. If your site d...",
+      "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7493217091643162624/"
     }
   ],
-  "last_updated": "2026-08-11T08:04:09.886571+00:00",
-  "total_posts": 42,
+  "last_updated": "2026-08-12T08:09:32.404826+00:00",
+  "total_posts": 43,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
