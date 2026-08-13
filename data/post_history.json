@@ -687,10 +687,26 @@
       "text_preview": "Most real estate websites lose leads because their property data is hours behind the market.\n\nRelying on slow, outdated plugins to sync MLS and external property APIs is a massive risk. If your site d...",
       "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7493217091643162624/"
+    },
+    {
+      "id": "urn:li:share:7493580060411658241",
+      "timestamp": "2026-08-13T08:11:51.236705+00:00",
+      "post_type": "expertise_showcase",
+      "topic": "Building reusable custom plugins in WordPress that don't bloat the site",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "realestateapp",
+        "wordpress",
+        "reactnative"
+      ],
+      "text_preview": "You do not need a massive 50MB plugin to solve a 5-line code problem on your WordPress site.\n\nEvery third-party plugin you add to your site brings its own baggage of unnecessary styles and scripts tha...",
+      "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7493580060411658241/"
     }
   ],
-  "last_updated": "2026-08-12T08:09:32.404826+00:00",
-  "total_posts": 43,
+  "last_updated": "2026-08-13T08:11:51.236721+00:00",
+  "total_posts": 44,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -721,6 +737,7 @@
     "How a dedicated booking mobile app increases rental conversions by 40%",
     "The truth about cross-platform development (React Native/Flutter) in 2026",
     "Vue.js vs Angular for enterprise dashboards: my honest take",
-    "Client story: Automating manual invoice generation for a rental business"
+    "Client story: Automating manual invoice generation for a rental business",
+    "Building reusable custom plugins in WordPress that don't bloat the site"
   ]
 }
