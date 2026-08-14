@@ -703,10 +703,26 @@
       "text_preview": "You do not need a massive 50MB plugin to solve a 5-line code problem on your WordPress site.\n\nEvery third-party plugin you add to your site brings its own baggage of unnecessary styles and scripts tha...",
       "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7493580060411658241/"
+    },
+    {
+      "id": "urn:li:share:7494010702500675584",
+      "timestamp": "2026-08-14T12:43:04.323461+00:00",
+      "post_type": "niche_solutions",
+      "topic": "The architecture behind 'Bookhere': my React Native booking & rental platform",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "flutter",
+        "api",
+        "paymentgateway"
+      ],
+      "text_preview": "Double bookings will destroy your rental business reputation faster than bad customer service.\n\nMost property owners manage listings across multiple platforms like Airbnb, Booking.com, and their own w...",
+      "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7494010702500675584/"
     }
   ],
-  "last_updated": "2026-08-13T08:11:51.236721+00:00",
-  "total_posts": 44,
+  "last_updated": "2026-08-14T12:43:04.323480+00:00",
+  "total_posts": 45,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
