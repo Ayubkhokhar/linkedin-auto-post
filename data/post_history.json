@@ -719,10 +719,26 @@
       "text_preview": "Double bookings will destroy your rental business reputation faster than bad customer service.\n\nMost property owners manage listings across multiple platforms like Airbnb, Booking.com, and their own w...",
       "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7494010702500675584/"
+    },
+    {
+      "id": "urn:li:share:7494292438962987008",
+      "timestamp": "2026-08-15T07:22:35.524825+00:00",
+      "post_type": "tech_discovery",
+      "topic": "The evolution of PHP 8 has completely changed how I write Laravel apps",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "angular",
+        "mobileappdevelopment",
+        "b2b"
+      ],
+      "text_preview": "Stop treating PHP like it is still stuck in 2012. PHP 8 has quietly become one of the most modern, type-safe, and high-performance languages available today.\n\nWith features like constructor promotion,...",
+      "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7494292438962987008/"
     }
   ],
-  "last_updated": "2026-08-14T12:43:04.323480+00:00",
-  "total_posts": 45,
+  "last_updated": "2026-08-15T07:22:35.524843+00:00",
+  "total_posts": 46,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
