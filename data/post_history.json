@@ -751,10 +751,26 @@
       "text_preview": "Cheap, messy code is the most expensive mistake a growing business can make.\n\nMany clients ask for speed above all else when launching a new app. But skipping clean architecture to save a few days of ...",
       "image_url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7494655069888364545/"
+    },
+    {
+      "id": "urn:li:share:7495022637115645952",
+      "timestamp": "2026-08-17T07:44:08.356986+00:00",
+      "post_type": "niche_solutions",
+      "topic": "How a dedicated booking mobile app increases rental conversions by 40%",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "freelance",
+        "flutter",
+        "upwork"
+      ],
+      "text_preview": "Your mobile website is costing you 40% of your potential rental bookings.\n\nMost rental businesses rely entirely on responsive web browsers. But mobile web browsers are slow, sessions expire, and users...",
+      "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7495022637115645952/"
     }
   ],
-  "last_updated": "2026-08-16T07:23:33.126219+00:00",
-  "total_posts": 47,
+  "last_updated": "2026-08-17T07:44:08.357002+00:00",
+  "total_posts": 48,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
