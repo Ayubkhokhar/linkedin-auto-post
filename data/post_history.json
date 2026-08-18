@@ -767,10 +767,26 @@
       "text_preview": "Your mobile website is costing you 40% of your potential rental bookings.\n\nMost rental businesses rely entirely on responsive web browsers. But mobile web browsers are slow, sessions expire, and users...",
       "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7495022637115645952/"
+    },
+    {
+      "id": "urn:li:share:7495381468014133248",
+      "timestamp": "2026-08-18T07:29:59.831380+00:00",
+      "post_type": "client_growth_story",
+      "topic": "When a client asks for 'just a simple website' but actually needs a full SaaS platform",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "bookingsoftware",
+        "wordpress",
+        "techcommunity"
+      ],
+      "text_preview": "A property management agency in Malaga, Spain, was losing thousands of euros every month.\n\n\"We just need a simple WordPress site with a calendar,\" their director told me during our first call.\n\nBut be...",
+      "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7495381468014133248/"
     }
   ],
-  "last_updated": "2026-08-17T07:44:08.357002+00:00",
-  "total_posts": 48,
+  "last_updated": "2026-08-18T07:29:59.831400+00:00",
+  "total_posts": 49,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -802,6 +818,7 @@
     "The truth about cross-platform development (React Native/Flutter) in 2026",
     "Vue.js vs Angular for enterprise dashboards: my honest take",
     "Client story: Automating manual invoice generation for a rental business",
-    "Building reusable custom plugins in WordPress that don't bloat the site"
+    "Building reusable custom plugins in WordPress that don't bloat the site",
+    "When a client asks for 'just a simple website' but actually needs a full SaaS platform"
   ]
 }
