@@ -783,10 +783,26 @@
       "text_preview": "A property management agency in Malaga, Spain, was losing thousands of euros every month.\n\n\"We just need a simple WordPress site with a calendar,\" their director told me during our first call.\n\nBut be...",
       "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7495381468014133248/"
+    },
+    {
+      "id": "urn:li:share:7495744015691284480",
+      "timestamp": "2026-08-19T07:30:38.254021+00:00",
+      "post_type": "expertise_showcase",
+      "topic": "How to securely handle webhooks from payment gateways in Express.js",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "realestateapp",
+        "nodejs",
+        "php"
+      ],
+      "text_preview": "If you are not verifying the signature of your payment webhooks, you are leaving a back door wide open for hackers to fake successful transactions.\n\nWebhooks are like digital receipts your payment pro...",
+      "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7495744015691284480/"
     }
   ],
-  "last_updated": "2026-08-18T07:29:59.831400+00:00",
-  "total_posts": 49,
+  "last_updated": "2026-08-19T07:30:38.254036+00:00",
+  "total_posts": 50,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
