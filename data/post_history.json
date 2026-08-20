@@ -799,10 +799,26 @@
       "text_preview": "If you are not verifying the signature of your payment webhooks, you are leaving a back door wide open for hackers to fake successful transactions.\n\nWebhooks are like digital receipts your payment pro...",
       "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7495744015691284480/"
+    },
+    {
+      "id": "urn:li:share:7496107056073101312",
+      "timestamp": "2026-08-20T07:33:13.556542+00:00",
+      "post_type": "expertise_showcase",
+      "topic": "Building CI/CD pipelines that deploy Laravel and Node.js apps without downtime",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "reactnative",
+        "businessgrowth",
+        "freelance"
+      ],
+      "text_preview": "Your users should never know you just pushed new code to production.\n\nWhen most teams deploy Laravel or Node.js apps, they pull the latest code directly into the live folder. This often causes a few s...",
+      "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7496107056073101312/"
     }
   ],
-  "last_updated": "2026-08-19T07:30:38.254036+00:00",
-  "total_posts": 50,
+  "last_updated": "2026-08-20T07:33:13.556557+00:00",
+  "total_posts": 51,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
@@ -835,6 +851,7 @@
     "Vue.js vs Angular for enterprise dashboards: my honest take",
     "Client story: Automating manual invoice generation for a rental business",
     "Building reusable custom plugins in WordPress that don't bloat the site",
-    "When a client asks for 'just a simple website' but actually needs a full SaaS platform"
+    "When a client asks for 'just a simple website' but actually needs a full SaaS platform",
+    "Building CI/CD pipelines that deploy Laravel and Node.js apps without downtime"
   ]
 }
