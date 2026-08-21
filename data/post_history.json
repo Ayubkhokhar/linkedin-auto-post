@@ -815,10 +815,26 @@
       "text_preview": "Your users should never know you just pushed new code to production.\n\nWhen most teams deploy Laravel or Node.js apps, they pull the latest code directly into the live folder. This often causes a few s...",
       "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
       "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7496107056073101312/"
+    },
+    {
+      "id": "urn:li:share:7496469979740086273",
+      "timestamp": "2026-08-21T07:35:21.558434+00:00",
+      "post_type": "expertise_showcase",
+      "topic": "WordPress theme customization: going beyond page builders to write actual code",
+      "hashtags": [
+        "webdevelopment",
+        "softwareengineering",
+        "bookingsoftware",
+        "laravel",
+        "angular"
+      ],
+      "text_preview": "If your WordPress site relies entirely on heavy page builders to function, you are trading short-term convenience for long-term technical debt.\n\nPage builders load massive amounts of bloated code just...",
+      "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:share:7496469979740086273/"
     }
   ],
-  "last_updated": "2026-08-20T07:33:13.556557+00:00",
-  "total_posts": 51,
+  "last_updated": "2026-08-21T07:35:21.558449+00:00",
+  "total_posts": 52,
   "topics_used": [
     "Automating property bookings and tenant management with Node.js and Express",
     "WordPress theme customization: going beyond page builders to write actual code",
